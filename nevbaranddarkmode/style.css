@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Odibee+Sans&family=Plus+Jakarta+Sans:wght@200&family=Poppins&family=Roboto&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@700&family=Odibee+Sans&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Poppins&family=Roboto&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+
+.top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 3em;
+    height: 6em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nevbar-items {
+    display: flex;
+    list-style-type: none;
+    gap: 3em;
+}
+
+.nevbar-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 530;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    padding: 10em 10em;
+}
+
+.about {
+    width: 50%;
+}
+
+.about p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.about p {
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    color: rgb(97, 97, 97);
+    padding: 3em 1em;
+    line-height: 2em;
+}
+
+.know-more-btn {
+    background-image: linear-gradient(to right, rgb(56, 56, 241), blue);
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    padding: .8em 1.8em;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Hamburger */
+.hamburger{
+    position: absolute;
+    top:5px;
+    right: 80px;
+    display: none;
+}
+.close-hamburger{
+    width: 30px;
+    display: inline-block;
+}
+.close-hamburger span{
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 5px;
+    margin:3px 0px;
+}
+.open-hamburger{
+    width: 30px;
+    display: inline-block;
+}
+.open-hamburger p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.activated .close-hamburger{
+    display: none;
+}
+.activated .open-hamburger{
+    display: inline-block;
+}
+.fa-solid {
+    font-size: 3rem;
+    margin-left: 40%;
+}
+
+.fa-mobile-screen-button {
+    background-color: blue;
+    color: white;
+    padding: .5em;
+    border-radius: 45%;
+}
+
+.fa-file-code {
+    background-color: green;
+    color: white;
+    padding: .5em;
+    border-radius: 40%;
+}
+
+.fa-code {
+    background-color: rgb(120, 50, 50);
+    color: white;
+    padding: .5em .3em;
+    border-radius: 40%;
+}
+
+.app-design h3 {
+    font-size: 2.5rem;
+    padding: 1em 0em;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.app-design p {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(101, 101, 101);
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.app-design {
+    background-color: white;
+    width: 340px;
+    padding: 6em 1em;
+    box-shadow: 10px 5px 60px rgb(233, 233, 233);
+}
+.middle-part{
+    width: 80%;
+    margin:auto;
+    max-width: 1021px;
+    display: flex;
+    gap:3em;
+    padding:4em 0em;
+}
+.middle-part-background{
+    width: 79%;
+}
+.middle-part-background img{
+    width: 100%;
+}
+.middle-part-text{
+    width: 90%;
+    height: 390px;
+}
+.middle-part-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding-bottom:1em;
+}
+.background-text{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size:2rem;
+}
+.project-counter {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    color: rgb(1, 1, 199);
+    margin:2em 0em;
+}
+
+.project-complete-counter {
+    font-size: 1rem;
+}
+
+.project-text {
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.project-complete-counter {
+    font-size: 2rem;
+    padding: .5em 0em;
+    color: black;
+}
+
+ .blue-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    color:#fff;
+    height: 400px; 
+} 
+
+.blue-background::before{
+    content:"";
+    background-image: url(earth-map-dot.png);
+    background-color: rgb(3, 3, 188);
+    opacity: .89;
+    background-blend-mode:color-dodge;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blue-background h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.blue-background p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2em 0;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 60%;
+}
+
+.blue-background button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: .3em 1em;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.blue-background button:hover {
+    background-color: rgb(8, 8, 137);
+    cursor: pointer;
+}
+
+.mid-part {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 0em;
+    margin: auto;
+    width: calc(100vw - 5vw);
+    max-width: 1024px;
+}
+
+.contact-page {
+    width: 32%;
+    box-shadow: 10px 5px 60px rgb(233, 233, 233);
+}
+
+.contact-page img {
+    width: 100%;
+}
+
+.contact-page h2,
+.contact-page p {
+    font-family: 'Open Sans', sans-serif;
+    padding: .7em 1em;
+}
+
+.contact-page h2 {
+    font-size: 2.5em;
+}
+
+.contact-page p {
+    color: rgb(113, 112, 112);
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.contact-page button {
+    background-image: linear-gradient(to right, rgb(55, 55, 237), rgb(7, 7, 149));
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: .4em 1.5em;
+    border-radius: 5em;
+    border: none;
+    margin: 1em 4em;
+    cursor:pointer;
+}
+.what-people-say{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: .1em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2rem;
+}
+.user-display{
+    display: flex;
+}
+.people-say{
+    width: calc(100vw - 5vw);
+    max-width: 1024px;
+    margin:0px auto;
+}
+.user-say{
+    position: relative;
+}
+.user-say p{
+    font-family: cursive;
+    font-size: 1.8rem;
+    color:grey;
+    font-style: italic;
+}
+.user-say h2{
+    font-family: 'Nunito', sans-serif;
+}
+.user-say img{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid blue;
+    position: absolute;
+}
+.image-user{
+    position: absolute;
+    left:70px;
+}
+.user-text{
+    padding:1.8em 0em 3em 0em;
+}
+.scroll-to-top li{
+    height: 40px;
+    width: 35px;
+    background-color: rgb(4, 168, 146);
+    color:white;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+/* NIGHT MODE */
+.bg{
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    cursor:pointer;
+}
+.bg .sunmode{
+    display: none;
+} 
+.dark-body{
+    background-color: black;
+    color:gainsboro; 
+}
+.dark-body .sunmode{
+    display: inline-block;
+    color:white;
+}
+
